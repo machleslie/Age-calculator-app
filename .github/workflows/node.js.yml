@@ -27,15 +27,15 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-
+    
     - name: Install dependencies
       run: npm ci
       working-directory: ./Age-calculator-app/app-calculator
-
+    
     - name: Build project
       run: npm run build --if-present
       working-directory: ./Age-calculator-app/app-calculator
-
+    
     - name: Run tests
       run: npm test
       working-directory: ./Age-calculator-app/app-calculator
