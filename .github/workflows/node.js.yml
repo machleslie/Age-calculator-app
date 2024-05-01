@@ -27,6 +27,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        cache-dependency-path: './age-calculator/package-lock.json'
+
     
     - name: Install dependencies
       run: npm ci
