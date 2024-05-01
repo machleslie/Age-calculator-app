@@ -27,7 +27,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        cache-dependency-path: './age-calculator/package-lock.json'
+        cache-dependency-path: './Age-calculator-app/age-calculator/package-lock.json'
 
     
     - name: Install dependencies
@@ -48,7 +48,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
+      
       - name: Deploy with gh-pages
         run: |
           npm install gh-pages
