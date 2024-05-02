@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./Age-calculator-app/age-calculator
+        working-directory: ./age-calculator
 
     strategy:
       matrix:
