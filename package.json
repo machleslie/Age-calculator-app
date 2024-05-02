@@ -1,7 +1,7 @@
 {
     "name": "age-calculator",
     "private": true,
-    "homepage": "https://machleslie.github.io/Age-calculator-app",
+    "homepage": "https://machleslie.github.io/age-calculator-app",
     "version": "0.0.0",
     "type": "module",
     "scripts": {
