@@ -13,10 +13,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./age-calculator
-
+  
     strategy:
       matrix:
         node-version: [18.x]
@@ -30,22 +27,18 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        cache-dependency-path: './age-calculator/node_modules'
 
         
 
     
     - name: Install dependencies
       run: npm ci
-      working-directory: ./Age-calculator-app/age-calculator
     
     - name: Build project
       run: npm run build --if-present
-      working-directory: ./Age-calculator-app/age-calculator
     
     - name: Run tests
       run: npm test
-      working-directory: ./Age-calculator-app/age-calculator
 
   deploy:
     runs-on: ubuntu-latest
