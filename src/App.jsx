@@ -60,8 +60,8 @@ function App() {
   };
 
   return (
-    <div className="bg-slate-200 flex justify-center align-middle">
-      <div className="container bg-white w-7/12 h-2/5 my-10 p-4 rounded-xl rounded-br-3xl">
+    <div className="bg-slate-200 h-96 flex justify-center align-middle items-center">
+      <div className="container bg-white bg-cover w-2/4 h-2/3 rounded-xl rounded-br-3xl p-10">
         <form onSubmit={handleSubmit}>
           <div className="inputpart flex justify-between w-8/12">
             <div>
@@ -128,26 +128,26 @@ function App() {
         </form>
         <div className="content">
           <div className="years flex">
-            <p className="text-7xl font-bold text-purple-700 mx-2">
+            <p className="text-8xl font-bold text-purple-700 mx-2">
               {getFormatedStringFromDays(number)[0]}
             </p>
-            <p className="text-7xl font-bold  text-zinc-900">years</p>
+            <p className="text-8xl font-bold  text-zinc-900">years</p>
           </div>
           <div className="months flex">
-            <p className="text-7xl font-bold text-purple-700 mx-2">
+            <p className="text-8xl font-bold text-purple-700 mx-2">
               {getFormatedStringFromDays(number)[1]}
             </p>
-            <p className="text-7xl font-bold  text-zinc-900">months</p>
+            <p className="text-8xl font-bold  text-zinc-900">months</p>
           </div>
           <div className="days flex">
-            <p className="text-7xl font-bold text-purple-700 mx-2">
+            <p className="text-8xl font-bold text-purple-700 mx-2">
               {getFormatedStringFromDays(number)[2]}
             </p>
-            <p className="text-7xl font-bold  text-zinc-900">days</p>
+            <p className="text-8xl font-bold  text-zinc-900">days</p>
           </div>
         </div>
       </div>
-    </div>
+      </div>
   );
 }
 

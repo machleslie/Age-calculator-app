@@ -9,4 +9,12 @@
     -webkit-appearance: none;
     margin: 0;
 }
-
+.root{
+    height: 100%;
+}
+.body{
+    height: 100%;
+}
+.h-96 {
+    height: 54rem/* 384px */;
+}
